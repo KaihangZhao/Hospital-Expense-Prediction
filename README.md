@@ -4,7 +4,9 @@
 
 This is a project to use PySpark(Spark SQL, Spark ML) and Mongodb to build distributed machine learning prediction on New York Hospital Expenses in patient level. There are three targests we consider in total: Length of Stay, Cost, Charges and Copayment Proportion. Our team members are  *Wei He*(whe13@usfca.edu), *Kaihang Zhao*(kzhao24@usfca.edu), *Jih-Chin Chen*(jchen217@usfca.edu), *Tong Wang*(twang77@usfca.edu) and *Yangzhou Tang*(ytang47@usfca.edu).
 
-<img src="picture/pipeline.png" width="450" align="right"> In this project, we created **MongoDB Atlas** and sharded the data into three clusters to improve data management. Then we created a data pipeline to access **20GB+** of raw data from **AWS S3** and transferred the cleaned data to MongoDB Atlas. After performing data preprocessing, we loaded data from MongoDB Atlas and applied machine learning algorithms in a distributed system on **Databricks** using **Spark ML**.
+In this project, we created **MongoDB Atlas** and sharded the data into three clusters to improve data management. Then we created a data pipeline to access **20GB+** of raw data from **AWS S3** and transferred the cleaned data to MongoDB Atlas. After performing data preprocessing, we loaded data from MongoDB Atlas and applied machine learning algorithms in a distributed system on **Databricks** using **Spark ML**.
+
+<img src="picture/pipeline.png" align="center"> 
 
 ## Raw Data Description
 
@@ -54,7 +56,7 @@ Furthermore, we merged extra small data points, including CPI, Race Ratio, and S
 
 
 ## ML Predictions
-We built Random Forest models and Gradient Boosting models to predict three difference target, including length of stay, total costs and total charges. Using R_squared and Feature Importances as metrics, we evaluated and assessed each model and extracted intelligence from our models.
+We built Random Forest Regression models and Gradient Boosting Regression models to predict three difference target, including length of stay, total costs and total charges through PysparkML. Using R_squared and Feature Importances as metrics, we evaluated and assessed each model and extracted intelligence from our models.
 
 ### 1. Length of Stay
 ### 2. Total Costs
