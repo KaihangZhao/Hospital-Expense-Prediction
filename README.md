@@ -30,40 +30,23 @@ Reference: https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARC
 | `CCS_Diagnosis_Description` | String | AHRQ Clinical Classification Software (CCS) Diagnosis Category Description. More information on the CCS system may be found at the direct link: http://www.hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp |
 | `CCS_Procedure_Code` | Numeric | AHRQ Clinical Classification Software (CCS) ICD-9 Procedure Category Code. More information on the CCS system may be found at the direct link: http://www.hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp |
 | `CCS_Procedure_Description` | String | AHRQ Clinical Classification Software (CCS) ICD-9 Procedure Category Description. More information on the CCS system may be found at the direct link: http://www.hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp |
-| `review` | Text | the text of the written review |
-| `unix_timestamp_created` | Timestamp | date the review was created (unix timestamp) |
-| `unix_timestamp_updated` | Timestamp | date the review was last updated (unix timestamp) |
-| `unix_timestamp_updated` | Timestamp | date the review was last updated (unix timestamp) |
-| `num_reviews` | Numeric | the number of reviews this user has written |
-| `review` | Text | the text of the written review |
-| `unix_timestamp_created` | Timestamp | date the review was created (unix timestamp) |
-| `unix_timestamp_updated` | Timestamp | date the review was last updated (unix timestamp) |
-| `unix_timestamp_updated` | Timestamp | date the review was last updated (unix timestamp) |
+| `APR_DRG_Code` | Numeric | The APR - DRG Classification Code |
+| `APR_DRG_Description` | String | The APR-DRG Classification Code Description In Calendar Year 2011, Version 28 of the APR-DRG Grouper. http://www.health.ny.gov/statistics/sparcs/sysdoc/appy.htm |
+| `APR_MDC_Code` | Numeric | All Patient Refined Major Diagnostic Category (APR MDC) Code. APR-DRG Codes 001-006 and 950-956 may group to more than one MDC Code. All other APR DRGs group to one MDC category. |
+| `APR_MDC_Description` | String | All Patient Refined Major Diagnostic Category (APR MDC) Description. |
+| `APR_Severity_of_Illness_Code` | Numeric | The APR-DRG Severity of Illness Code: 1, 2, 3, 4 |
+| `APR_Severity_of_Illness_Description` | String| All Patient Refined Severity of Illness (APR SOI) Description. Minor (1), Moderate (2), Major (3) , Extreme (4).|
+| `APR_Risk_of_Mortality` | String | All Patient Refined Risk of Mortality (APR ROM). Minor (1), Moderate (2), Major (3) , Extreme (4). |
+| `APR_Medical_Surgical_Description` | String | The APR-DRG specific classification of Medical, Surgical or Not Applicable. |
+| `Payment_Typology_1` | String | A description of the type of payment for this occurrence.|
+| `Payment_Typology_2` | String | A description of the type of payment for this occurrence. |
+| `Payment_Typology_3` | String | A description of the type of payment for this occurrence. |
+| `Birth_Weight` | String | The neonate birth weight in grams; rounded to nearest 100g. |
+| `Abortion_Edit_Indicator` | String | A flag to indicate if the discharge record contains any indication of abortion ("N" = No; "Y" = Yes). |
+| `Total_Charges` | String | Total charges for the discharge.|
+| `Total_Costs` | String | Total estimated costs for the discharge.|
 
-
-
-
-   
-                     StructField('CCS_Procedure_Code', IntegerType(), True),\
-                     StructField('CCS_Procedure_Description', StringType(), True),\
-                     StructField('APR_DRG_Code', IntegerType(), True),\
-                     StructField('APR_DRG_Description', StringType(), True),\
-                     StructField('APR_MDC_Code', IntegerType(), True),\
-                     StructField('APR_MDC_Description', StringType(), True),\
-                     StructField('APR_Severity_of_Illness_Code', IntegerType(), True),\
-                     StructField('APR_Severity_of_Illness_Description', StringType(), True),\
-                     StructField('APR_Risk_of_Mortality', StringType(), True),\
-                     StructField('APR_Medical_Surgical_Description', StringType(), True),\
-                     StructField('Payment_Typology_1', StringType(), True),\
-                     StructField('Payment_Typology_2', StringType(), True),\
-                     StructField('Payment_Typology_3', StringType(), True),\
-                     StructField('Birth_Weight', StringType(), True),\
-                     StructField('Abortion_Edit_Indicator', StringType(), True),\
-                     StructField('Emergency_Department_Indicator', StringType(), True),\
-                     StructField('Total_Charges', StringType(), True),\
-                     StructField('Total_Costs', StringType(), True)]
-
-
+Furthermore, we merged extra small data points, including CPI, Race Ratio, and Sex Ratio in zip-code level to trying extract more features in demographic and economic level.
 
 
 
