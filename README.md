@@ -65,3 +65,13 @@ We built Random Forest Regression models and Gradient Boosting Regression models
 ### 3. Total Charges
 
 ## Conclusion & Lesson Learned
+
+- Gradient Boosting is usually more time consuming than Random Forest.
+- Gradient Boosting generally performs better than Random Forest.
+- The best target we predict is total charge, with R2 as around 0.88; which can be put into further research and production.
+- APR_DRG_Code would be the most important feature except from Length of Stay prediction.
+- Extra features we merged into the main table exactly contributes into our prediction from feature importance distribution.
+- MongoDB is a good choice for data storage and sharding.
+- Using Databricks and Pyspark can significantly boost the efficiency of the whole pipeline construction, including from data manipulation to ML model deployment.
+ 
+ 
