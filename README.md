@@ -11,7 +11,9 @@ In this project, we created **MongoDB Atlas** and sharded the data into three cl
 ## Raw Data Description
 
 Our data contains New York Hospital Discharges data in the patient level from 2011 to 2013. 
+
 Reference: https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/u4ud-w55t
+
 | Variable | DataType | Detail |
 |--------|--------|--------|
 | `Health_Service_Area` | String | A description of the Health Service Area (HSA) in which the hospital is located. Blank for abortion records. Capital/Adirondack, Central NY, Finger Lakes, Hudson Valley, Long Island, New York City, Southern Tier, Western NY.|
