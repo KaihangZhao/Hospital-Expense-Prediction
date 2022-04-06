@@ -50,7 +50,7 @@ Reference: https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARC
 | `Total_Charges` | String | Total charges for the discharge.|
 | `Total_Costs` | String | Total estimated costs for the discharge.|
 
-Furthermore, we merged extra small data points, including CPI, Race Ratio, and Sex Ratio in zip-code level to trying extract more features in demographic and economic level.
+Furthermore, we merged extra small data points, including CPI, Race Ratio, and Sex Ratio in zip-code level to try extracting more features in demographic and economic level.
 
 
 
@@ -58,7 +58,7 @@ Furthermore, we merged extra small data points, including CPI, Race Ratio, and S
 
 
 ## ML Predictions
-We built Random Forest Regression models and Gradient Boosting Regression models to predict three difference target, including length of stay, total costs and total charges through PysparkML. Using R_squared and Feature Importances as metrics, we evaluated and assessed each model and extracted intelligence from our models.
+We built Random Forest Regression models and Gradient Boosting Regression models to predict three difference target, including length of stay, total costs and total charges through **PysparkML**. Using R_squared and Feature Importances as metrics, we evaluated and assessed each model and extracted intelligence from our models.
 
 ### 1. Length of Stay
 ### 2. Total Costs
